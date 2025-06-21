@@ -44,3 +44,21 @@ We tested PROPS on the following pretrained language models:
 - **[Pythia-1B](https://huggingface.co/EleutherAI/pythia-1b)** – Open LLM from EleutherAI
 
 ---
+
+## 🗂️ Repository Structure
+
+PROPS/
+
+├── DP-SGD/ # Code for DP-SGD alignment
+
+├── Eval/ # Evaluation scripts
+
+├── Label-DP/ # Randomized Response utilities
+
+├── PROPS/ # Core PROPS training logic
+
+├── SFT_Train/ # Scripts for supervised fine-tuning
+
+├── configs/ # YAML config files for training/eval
+
+├── README.md # This file
