@@ -37,7 +37,6 @@ PROPS has been evaluated using the following **three preference datasets**:
 > ⚠️ **AlpacaEval** uses a slightly different format; support is included but **commented out** in the code.
 
 ---
----
 
 ## 🧠 Models Evaluated
 
