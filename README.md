@@ -60,11 +60,11 @@ PROPS/
 
 ├── Eval/ # Evaluation utilities 
 
-│ ├── preference_dataset.py (must be fully included)
+│ ├── preference_dataset.py         ⚠️(must be fully included)
 
-│ ├── utils.py (must be fully included)
+│ ├── utils.py                      ⚠️(must be fully included)
 
-│ ├── gpt4-eval (must be fully included)
+│ ├── gpt4-eval                     ⚠️(must be fully included)
 
 │ └── Win_Rate.ipynb 
 
@@ -75,6 +75,6 @@ PROPS/
 
 ├── SFT_Train/ # Scripts for supervised fine-tuning
 
-│ └── configs/ # YAML config files for training/eval (must be fully included, we provide a simple pythia1B example)
+│ └── configs/ # YAML config files for training/eval   ⚠️(must be fully included, we provide a simple pythia1B example)
 
 ├── README.md # This file
