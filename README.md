@@ -32,7 +32,11 @@ PROPS has been evaluated using the following **three preference datasets**:
 1. **[AlpacaEval](https://huggingface.co/datasets/tatsu-lab/alpaca_eval)** – Benchmark for evaluating LLMs with preference comparisons.
 2. **[Anthropic HH-RLHF](https://huggingface.co/datasets/Anthropic/hh-rlhf)** – Helpful and harmless human feedback dataset.
 3. **[Truthy-DPO-v0.1](https://huggingface.co/datasets/jondurbin/truthy-dpo-v0.1)** – Preference dataset tailored for Direct Preference Optimization (DPO).
+4. 
+> ⚠️ **Note:** The same training script supports both **Truthy-DPO** and **HH-RLHF** out-of-the-box.  
+> ⚠️ **AlpacaEval** uses a slightly different format; support is included but **commented out** in the code.
 
+---
 ---
 
 ## 🧠 Models Evaluated
@@ -49,9 +53,22 @@ We tested PROPS on the following pretrained language models:
 
 PROPS/
 
-├── DP-SGD/ # Code for DP-SGD alignment
+├── DP-SGD/ # Code for DP-SGD alignment 
 
-├── Eval/ # Evaluation scripts
+│ ├── Trainer.py # Custom trainer with gradient clipping and noise
+
+│ └── Preference_dataset.py # Dataset wrapper with DP_SGD mechanisms
+
+├── Eval/ # Evaluation utilities 
+
+│ ├── preference_dataset.py (must be fully included)
+
+│ ├── utils.py (must be fully included)
+
+│ ├── gpt4-eval (must be fully included)
+
+│ └── Win_Rate.ipynb 
+
 
 ├── Label-DP/ # Randomized Response utilities
 
@@ -59,6 +76,6 @@ PROPS/
 
 ├── SFT_Train/ # Scripts for supervised fine-tuning
 
-├── configs/ # YAML config files for training/eval
+│ └── configs/ # YAML config files for training/eval (must be fully included, we provide a simple pythia1B example)
 
 ├── README.md # This file
