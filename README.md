@@ -1,8 +1,10 @@
-# Aligning Large Language Models with Preference Privacy
+# PROPS: Progressively Private Self-alignment of Large Language Models
 
 This repository contains code implementing the methods described in the paper:
 
-> **[Aligning Large Language Models with Preference Privacy]**
+> **PROPS: Progressively Private Self-alignment of Large Language Models**  
+> Noel Teku, Fengwei Tian, Payel Bhattacharjee, Souradip Chakraborty, Amrit Singh Bedi, Ravi Tandon  
+> Transactions on Machine Learning Research (TMLR), 2025 · [arXiv](https://arxiv.org/abs/2508.06783)
 
 ---
 
@@ -78,3 +80,16 @@ PROPS/
 │ └── configs/ # YAML config files for training/eval   ⚠️(must be fully included, we provide a simple pythia1B example)
 
 ├── README.md # This file
+
+---
+
+## Citation
+
+```bibtex
+@article{teku2025props,
+  title   = {{PROPS}: Progressively Private Self-alignment of Large Language Models},
+  author  = {Teku, Noel and Tian, Fengwei and Bhattacharjee, Payel and Chakraborty, Souradip and Bedi, Amrit Singh and Tandon, Ravi},
+  journal = {Transactions on Machine Learning Research},
+  year    = {2025}
+}
+```
