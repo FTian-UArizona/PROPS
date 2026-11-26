@@ -86,7 +86,7 @@ To reproduce the paper, use the values in the paper.
 
 `DP-SGD/trainers.py`, `DP-SGD/preference_datasets.py`, `Eval/preference_datasets.py`, and `Eval/utils.py` come from
 [direct-preference-optimization](https://github.com/eric-mitchell/direct-preference-optimization) by Eric Mitchell et al.,
-licensed under the Apache License 2.0 (see `LICENSE-direct-preference-optimization`).
+licensed under the Apache License 2.0 (see `third_party/LICENSE-direct-preference-optimization`).
 We changed the two files in `DP-SGD/`: `trainers.py` adds DP-SGD (per-example clipping and noise), and `preference_datasets.py` adds more datasets, including truthy-dpo-v0.1. The two files in `Eval/` are unchanged.
 
 ---
